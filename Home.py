@@ -55,6 +55,8 @@ st.write('Then select the column to be used as unique ID for each row')
 st.write('Finally, select the columns to be compared for changes')
 st.write('\nDeveloped by Daniel Perez')
 
+st.subheader('Upload files')
+
 col1, col2 = st.columns(2)
 old_file = col1.file_uploader("Old file")
 new_file = col2.file_uploader("New file")
