@@ -67,7 +67,7 @@ if old_file is None or new_file is None:
 else:
     old = pd.read_excel(old_file)
     new = pd.read_excel(new_file)
-    id_var = st.selectbox('Choose the key variable', old.columns)
+    id_var = st.selectbox('Choose unique ID variable', old.columns)
     old = old.set_index(id_var)
     new = new.set_index(id_var)
     cols = st.multiselect('Columns to check for changes', old.columns, default=old.columns[0])
