@@ -53,6 +53,7 @@ st.title('Compare Excel files')
 st.write('Compare two Excel files and highlights the changes between them. Please upload the two files below.')
 st.write('Then select the column to be used as unique ID for each row')
 st.write('Finally, select the columns to be compared for changes')
+st.write('\nDeveloped by Daniel Perez')
 
 col1, col2 = st.columns(2)
 old_file = col1.file_uploader("Old file")
@@ -92,6 +93,3 @@ else:
         file_name='Changes.xlsx',
         mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
     )
-
-
-st.write('Developed by Daniel Perez')
